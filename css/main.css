@@ -1,0 +1,14 @@
+/* ALL */
+*{
+    font-family:'Microsoft YaHei', 'Arial', 'Helvetica', sans-serif !important;
+}
+
+body{
+    margin: 0;
+}
+/* HEADER */
+header{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(/src/41313058ced9cad7a1fc58843f17efac_705719549853980869.jpg);
+}
