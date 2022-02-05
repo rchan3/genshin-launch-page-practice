@@ -9,11 +9,12 @@ body {
 /* HEADER */
 header {
   margin: 0;
-  min-height: 100vh;
+  min-height: 90vh;
   max-width: 100vw;
   background-image: url(/src/41313058ced9cad7a1fc58843f17efac_705719549853980869.jpg);
-  background-size: cover;
-  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% -10vh;
 }
 
 #header-flexbox {
@@ -39,4 +40,29 @@ header {
   position: absolute;
   right: 20vw;
   top: 8vh;
+}
+
+#header-video-play-button {
+  display: flex;
+  justify-content: center;
+}
+
+#header-video-play-button img {
+  position: relative;
+  bottom: 20vh;
+}
+
+#lantern-png {
+  background-image: url(/src/10d5912b1105a3ee66419311cf0d6ba2_2067232246792438049.png);
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 90vh;
+  position: relative;
+  top: -28vh;
+}
+/* CHAR INFORMATION */
+
+#char-information {
+  height: 110vh;
 }
