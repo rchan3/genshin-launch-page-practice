@@ -1,6 +1,7 @@
 /* ALL */
 * {
   font-family: "Microsoft YaHei", "Arial", "Helvetica", sans-serif !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -68,5 +69,5 @@ main {
 }
 
 #char-information {
-  height: 110vh;
+  max-height: 100vh;
 }
