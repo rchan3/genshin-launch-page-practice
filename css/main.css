@@ -1,7 +1,6 @@
 /* ALL */
 * {
   font-family: "Microsoft YaHei", "Arial", "Helvetica", sans-serif !important;
-  overflow-x: hidden;
 }
 
 body {
@@ -66,8 +65,22 @@ header {
 /* CHAR INFORMATION */
 main {
   background-image: url(/src/cc67571746fdde1f3d5dd4498602f2ae_736159077554624526.jpg);
+  background-size: cover;
 }
 
 #char-information {
-  max-height: 100vh;
+  min-height: 100vh;
+}
+
+#char-information-title {
+  position: relative;
+  height: 30vh;
+}
+
+#char-information-title img {
+  position: absolute;
+  bottom: 45vh;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
