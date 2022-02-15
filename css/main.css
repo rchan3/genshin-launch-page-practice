@@ -6,6 +6,18 @@
 body {
   margin: 0;
 }
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(199, 189, 158);
+}
 /* HEADER */
 header {
   margin: 0;
@@ -83,4 +95,54 @@ main {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+#char-shenhe {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+#char-shenhe-image {
+  padding-left: 3vw;
+  padding-bottom: 5vh;
+  padding-top: 3vh;
+  width: 65%;
+}
+
+#char-shenhe-image img {
+  width: 100%;
+  height: auto;
+}
+
+#char-shenhe-image-video {
+  position: absolute;
+  bottom: -5vh;
+  right: 35vw;
+}
+
+#char-shenhe-image-video img {
+  width: 100%;
+  height: auto;
+}
+
+#char-shenhe-desc {
+  padding-top: 20vh;
+  padding-right: 3vw;
+  width: 20%;
+  color: white;
+  line-height: 5vh;
+  font-size: 18px;
+  text-align: left;
+  margin-left: -4vw;
+}
+
+#char-shenhe-desc img {
+  margin-left: -6.5vw;
+}
+.carousel {
+  position: relative;
+  margin-top: -600px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
