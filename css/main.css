@@ -74,11 +74,13 @@ header {
   top: -28vh;
   margin-bottom: -28vh;
 }
-/* CHAR INFORMATION */
+/* MAIN */
 main {
   background-image: url(/src/cc67571746fdde1f3d5dd4498602f2ae_736159077554624526.jpg);
   background-size: cover;
 }
+
+/* CHARACTER INFORMATION */
 
 #char-information {
   min-height: 100vh;
@@ -171,8 +173,15 @@ main {
 #zhongli-quicklink-inactive {
   z-index: 2;
   position: absolute;
-  left: 180px;
-  bottom: 80px;
+  left: 320px;
+  bottom: 160px;
+}
+
+#xiao-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 420px;
+  bottom: 280px;
 }
 
 .carousel {
