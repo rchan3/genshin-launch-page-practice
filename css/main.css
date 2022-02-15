@@ -184,6 +184,13 @@ main {
   bottom: 280px;
 }
 
+#yunjin-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 465px;
+  bottom: 435px;
+}
+
 .carousel {
   position: relative;
   margin-top: -600px;
