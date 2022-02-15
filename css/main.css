@@ -108,6 +108,7 @@ main {
   padding-bottom: 5vh;
   padding-top: 3vh;
   width: 65%;
+  z-index: 2;
 }
 
 #char-shenhe-image img {
@@ -135,11 +136,45 @@ main {
   font-size: 18px;
   text-align: left;
   margin-left: -4vw;
+  position: relative;
+}
+
+#char-info-circle {
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  left: -500px;
+  width: 980px;
+  height: 980px;
+  transform: rotate(45deg);
 }
 
 #char-shenhe-desc img {
   margin-left: -6.5vw;
 }
+
+/* active and inactive links in carousel selection */
+
+#shenhe-quicklink-active {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+}
+
+#ganyu-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 180px;
+  bottom: 80px;
+}
+
+#zhongli-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 180px;
+  bottom: 80px;
+}
+
 .carousel {
   position: relative;
   margin-top: -600px;
