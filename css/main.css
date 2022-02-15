@@ -129,6 +129,10 @@ main {
   height: auto;
 }
 
+#char-shenhe-image-video img:hover {
+  cursor: pointer;
+}
+
 #char-shenhe-desc {
   padding-top: 20vh;
   padding-right: 3vw;
@@ -139,10 +143,11 @@ main {
   text-align: left;
   margin-left: -4vw;
   position: relative;
+  z-index: 3;
 }
 
 #char-info-circle {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   top: -20px;
   left: -500px;
@@ -161,6 +166,9 @@ main {
   z-index: 2;
   position: absolute;
   bottom: 50px;
+}
+#shenhe-quicklink-active:hover {
+  cursor: pointer;
 }
 
 #ganyu-quicklink-inactive {
