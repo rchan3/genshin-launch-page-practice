@@ -178,14 +178,23 @@ main {
   bottom: 80px;
 }
 
-#ganyu-quicklink-active {
-  z-index: -1;
+#ganyu-quicklink-active{
+  z-index: 3;
   position: absolute;
   left: 180px;
   bottom: 80px;
+  visibility: hidden;
 }
 
-#zhongli-quicklink-inactive {
+#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active{
+  visibility: visible;
+}
+
+#ganyu-quicklink-active:hover{
+  visibility: visible;
+}
+
+#zhongli-quicklink-inactive{
   z-index: 2;
   position: absolute;
   left: 320px;
