@@ -162,7 +162,8 @@ main {
 
 /* active and inactive links in carousel selection */
 
-#shenhe-quicklink-active {
+/* shenhe portrait */
+#shenhe-quicklink-selected {
   z-index: 2;
   position: absolute;
   bottom: 50px;
@@ -171,6 +172,7 @@ main {
   cursor: pointer;
 }
 
+/* ganyu portrait */
 #ganyu-quicklink-inactive {
   z-index: 2;
   position: absolute;
@@ -194,6 +196,8 @@ main {
   visibility: visible;
 }
 
+/* zhongli portrait */
+
 #zhongli-quicklink-inactive{
   z-index: 2;
   position: absolute;
@@ -201,6 +205,24 @@ main {
   bottom: 160px;
 }
 
+#zhongli-quicklink-active{
+  z-index: 3;
+  position: absolute;
+  left: 320px;
+  bottom: 160px;
+  visibility: hidden;
+}
+
+#zhongli-quicklink-inactive:hover ~ #zhongli-quicklink-active{
+  visibility: visible;
+}
+
+#zhongli-quicklink-active:hover{
+  visibility: visible;
+}
+
+
+/* xiao portrait */
 #xiao-quicklink-inactive {
   z-index: 2;
   position: absolute;
