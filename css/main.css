@@ -223,12 +223,31 @@ main {
 
 
 /* xiao portrait */
-#xiao-quicklink-inactive {
+#xiao-quicklink-inactive{
   z-index: 2;
   position: absolute;
   left: 420px;
   bottom: 280px;
 }
+
+#xiao-quicklink-active{
+  z-index: 3;
+  position: absolute;
+  left: 420px;
+  bottom: 280px;
+  visibility: hidden;
+}
+
+#xiao-quicklink-inactive:hover ~ #xiao-quicklink-active{
+  visibility: visible;
+}
+
+#xiao-quicklink-active:hover{
+  visibility: visible;
+}
+
+
+/* yunjun portrait */
 
 #yunjin-quicklink-inactive {
   z-index: 2;
