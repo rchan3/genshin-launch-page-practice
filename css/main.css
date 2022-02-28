@@ -189,14 +189,6 @@ main {
   visibility: hidden;
 }
 
-#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active {
-  visibility: visible;
-}
-
-#ganyu-quicklink-active:hover {
-  visibility: visible;
-}
-
 /* zhongli portrait */
 
 #zhongli-quicklink-inactive {
@@ -212,14 +204,6 @@ main {
   left: 320px;
   bottom: 160px;
   visibility: hidden;
-}
-
-#zhongli-quicklink-inactive:hover ~ #zhongli-quicklink-active {
-  visibility: visible;
-}
-
-#zhongli-quicklink-active:hover {
-  visibility: visible;
 }
 
 /* xiao portrait */
@@ -238,14 +222,6 @@ main {
   visibility: hidden;
 }
 
-#xiao-quicklink-inactive:hover ~ #xiao-quicklink-active {
-  visibility: visible;
-}
-
-#xiao-quicklink-active:hover {
-  visibility: visible;
-}
-
 /* yunjun portrait */
 
 #yunjin-quicklink-inactive {
@@ -253,6 +229,29 @@ main {
   position: absolute;
   left: 465px;
   bottom: 435px;
+}
+
+#yunjin-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 465px;
+  bottom: 435px;
+  visibility: hidden;
+}
+
+/* portrait hovers */
+#yunjin-quicklink-inactive:hover ~ #yunjin-quicklink-active,
+#xiao-quicklink-inactive:hover ~ #xiao-quicklink-active,
+#zhongli-quicklink-inactive:hover ~ #zhongli-quicklink-active,
+#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active {
+  visibility: visible;
+}
+
+#yunjin-quicklink-active:hover,
+#xiao-quicklink-active:hover,
+#zhongli-quicklink-active:hover,
+#ganyu-quicklink-active:hover {
+  visibility: visible;
 }
 
 .carousel {
