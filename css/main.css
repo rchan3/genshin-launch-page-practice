@@ -100,7 +100,8 @@ main {
   height: 100%;
 }
 
-#char-shenhe {
+#char-shenhe,
+#char-ganyu {
   position: relative;
   display: flex;
   width: 100%;
