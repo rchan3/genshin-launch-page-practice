@@ -107,7 +107,7 @@ main {
   width: 100%;
 }
 
-#char-shenhe-image {
+.char-image {
   padding-left: 3vw;
   padding-bottom: 5vh;
   padding-top: 3vh;
@@ -115,27 +115,27 @@ main {
   z-index: 2;
 }
 
-#char-shenhe-image img {
+.char-image img {
   width: 100%;
   height: auto;
 }
 
-#char-shenhe-image-video {
+.char-image-video {
   position: absolute;
-  bottom: -5vh;
-  right: 35vw;
+  bottom: 0;
+  right: 31vw;
 }
 
-#char-shenhe-image-video img {
-  width: 100%;
+.char-image-video img {
+  width: 90%;
   height: auto;
 }
 
-#char-shenhe-image-video img:hover {
+.char-image-video img:hover {
   cursor: pointer;
 }
 
-#char-shenhe-desc {
+.char-desc {
   padding-top: 20vh;
   padding-right: 3vw;
   width: 20%;
@@ -148,7 +148,7 @@ main {
   z-index: 3;
 }
 
-#char-info-circle {
+.char-info-circle {
   z-index: -1;
   position: absolute;
   top: -20px;
@@ -158,20 +158,40 @@ main {
   transform: rotate(45deg);
 }
 
-#char-shenhe-desc img {
+.char-desc img {
   margin-left: -6.5vw;
 }
 
 /* active and inactive links in carousel selection */
 
+/* selected portraits */
+.shenhe-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  bottom: 79px;
+}
+
+#ganyu-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 180px;
+  bottom: 80px;
+}
+
 /* shenhe portrait */
-#shenhe-quicklink-selected {
+
+#shenhe-quicklink-inactive {
   z-index: 2;
   position: absolute;
   bottom: 50px;
 }
-#shenhe-quicklink-active:hover {
-  cursor: pointer;
+
+#shenhe-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  bottom: 50px;
+  visibility: hidden;
 }
 
 /* ganyu portrait */
@@ -244,14 +264,16 @@ main {
 #yunjin-quicklink-inactive:hover ~ #yunjin-quicklink-active,
 #xiao-quicklink-inactive:hover ~ #xiao-quicklink-active,
 #zhongli-quicklink-inactive:hover ~ #zhongli-quicklink-active,
-#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active {
+#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active,
+#shenhe-quicklink-inactive:hover ~ #shenhe-quicklink-active {
   visibility: visible;
 }
 
 #yunjin-quicklink-active:hover,
 #xiao-quicklink-active:hover,
 #zhongli-quicklink-active:hover,
-#ganyu-quicklink-active:hover {
+#ganyu-quicklink-active:hover,
+#shenhe-quicklink-active:hover {
   visibility: visible;
 }
 
