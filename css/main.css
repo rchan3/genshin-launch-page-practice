@@ -199,14 +199,14 @@ main {
   z-index: 2;
   position: absolute;
   left: 180px;
-  bottom: 80px;
+  bottom: 97px;
 }
 
 #ganyu-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 180px;
-  bottom: 80px;
+  bottom: 97px;
   visibility: hidden;
 }
 
@@ -215,15 +215,15 @@ main {
 #zhongli-quicklink-inactive {
   z-index: 2;
   position: absolute;
-  left: 320px;
-  bottom: 160px;
+  left: 316px;
+  bottom: 167px;
 }
 
 #zhongli-quicklink-active {
   z-index: 3;
   position: absolute;
-  left: 320px;
-  bottom: 160px;
+  left: 316px;
+  bottom: 167px;
   visibility: hidden;
 }
 
@@ -231,14 +231,14 @@ main {
 #xiao-quicklink-inactive {
   z-index: 2;
   position: absolute;
-  left: 420px;
+  left: 415px;
   bottom: 280px;
 }
 
 #xiao-quicklink-active {
   z-index: 3;
   position: absolute;
-  left: 420px;
+  left: 415px;
   bottom: 280px;
   visibility: hidden;
 }
@@ -249,14 +249,14 @@ main {
   z-index: 2;
   position: absolute;
   left: 465px;
-  bottom: 435px;
+  bottom: 430px;
 }
 
 #yunjin-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 465px;
-  bottom: 435px;
+  bottom: 430px;
   visibility: hidden;
 }
 
