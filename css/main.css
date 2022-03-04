@@ -101,7 +101,10 @@ main {
 }
 
 #char-shenhe,
-#char-ganyu {
+#char-ganyu,
+#char-zhongli,
+#char-xiao,
+#char-yunjin {
   position: relative;
   display: flex;
   width: 100%;
@@ -177,6 +180,13 @@ main {
   position: absolute;
   left: 180px;
   bottom: 97px;
+}
+
+.zhongli-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 316px;
+  bottom: 167px;
 }
 
 /* shenhe portrait */
