@@ -195,14 +195,14 @@ main {
 }
 
 /* ganyu portrait */
-#ganyu-quicklink-inactive {
+.ganyu-quicklink-inactive {
   z-index: 2;
   position: absolute;
   left: 180px;
   bottom: 97px;
 }
 
-#ganyu-quicklink-active {
+.ganyu-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 180px;
@@ -212,14 +212,14 @@ main {
 
 /* zhongli portrait */
 
-#zhongli-quicklink-inactive {
+.zhongli-quicklink-inactive {
   z-index: 2;
   position: absolute;
   left: 316px;
   bottom: 167px;
 }
 
-#zhongli-quicklink-active {
+.zhongli-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 316px;
@@ -228,14 +228,14 @@ main {
 }
 
 /* xiao portrait */
-#xiao-quicklink-inactive {
+.xiao-quicklink-inactive {
   z-index: 2;
   position: absolute;
   left: 415px;
   bottom: 280px;
 }
 
-#xiao-quicklink-active {
+.xiao-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 415px;
@@ -245,14 +245,14 @@ main {
 
 /* yunjun portrait */
 
-#yunjin-quicklink-inactive {
+.yunjin-quicklink-inactive {
   z-index: 2;
   position: absolute;
   left: 465px;
   bottom: 430px;
 }
 
-#yunjin-quicklink-active {
+.yunjin-quicklink-active {
   z-index: 3;
   position: absolute;
   left: 465px;
@@ -261,19 +261,19 @@ main {
 }
 
 /* portrait hovers */
-#yunjin-quicklink-inactive:hover ~ #yunjin-quicklink-active,
-#xiao-quicklink-inactive:hover ~ #xiao-quicklink-active,
-#zhongli-quicklink-inactive:hover ~ #zhongli-quicklink-active,
-#ganyu-quicklink-inactive:hover ~ #ganyu-quicklink-active,
-#shenhe-quicklink-inactive:hover ~ #shenhe-quicklink-active {
+.yunjin-quicklink-inactive:hover ~ .yunjin-quicklink-active,
+.xiao-quicklink-inactive:hover ~ .xiao-quicklink-active,
+.zhongli-quicklink-inactive:hover ~ .zhongli-quicklink-active,
+.ganyu-quicklink-inactive:hover ~ .ganyu-quicklink-active,
+.shenhe-quicklink-inactive:hover ~ .shenhe-quicklink-active {
   visibility: visible;
 }
 
-#yunjin-quicklink-active:hover,
-#xiao-quicklink-active:hover,
-#zhongli-quicklink-active:hover,
-#ganyu-quicklink-active:hover,
-#shenhe-quicklink-active:hover {
+.yunjin-quicklink-active:hover,
+.xiao-quicklink-active:hover,
+.zhongli-quicklink-active:hover,
+.ganyu-quicklink-active:hover,
+.shenhe-quicklink-active:hover {
   visibility: visible;
 }
 
