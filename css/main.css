@@ -172,25 +172,27 @@ main {
   bottom: 79px;
 }
 
-#ganyu-quicklink-selected {
+.ganyu-quicklink-selected {
   z-index: 2;
   position: absolute;
   left: 180px;
-  bottom: 80px;
+  bottom: 97px;
 }
 
 /* shenhe portrait */
 
-#shenhe-quicklink-inactive {
+.shenhe-quicklink-inactive {
   z-index: 2;
   position: absolute;
-  bottom: 50px;
+  left: 25px;
+  bottom: 79px;
 }
 
-#shenhe-quicklink-active {
+.shenhe-quicklink-active {
   z-index: 3;
   position: absolute;
-  bottom: 50px;
+  left: 25px;
+  bottom: 79px;
   visibility: hidden;
 }
 
