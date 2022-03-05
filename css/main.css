@@ -189,6 +189,12 @@ main {
   bottom: 167px;
 }
 
+.xiao-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 415px;
+  bottom: 280px;
+}
 /* shenhe portrait */
 
 .shenhe-quicklink-inactive {
