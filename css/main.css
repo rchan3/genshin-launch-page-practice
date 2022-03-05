@@ -195,6 +195,13 @@ main {
   left: 415px;
   bottom: 280px;
 }
+
+.yunjin-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 465px;
+  bottom: 430px;
+}
 /* shenhe portrait */
 
 .shenhe-quicklink-inactive {
