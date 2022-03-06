@@ -84,7 +84,7 @@ main {
 /* CHARACTER INFORMATION */
 
 #char-information {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 #char-information-title {
@@ -107,7 +107,7 @@ main {
 #char-yunjin {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 90%;
 }
 
 .char-image {
@@ -307,4 +307,32 @@ main {
   margin-top: -600px;
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+/* carousel buttons */
+.prev {
+  position: absolute;
+  top: 150vh;
+  z-index: 2;
+}
+.next {
+  position: absolute;
+  right: 0px;
+  top: 150vh;
+  z-index: 2;
+}
+
+.right-arrow-active,
+.left-arrow-active {
+  z-index: 3;
+  visibility: hidden;
+}
+
+.right-arrow-inactive:hover ~ .right-arrow-active,
+.left-arrow-inactive:hover ~ .left-arrow-active {
+  visibility: visible;
+}
+.right-arrow-active:hover,
+.left-arrow-active:hover {
+  visibility: visible;
 }
