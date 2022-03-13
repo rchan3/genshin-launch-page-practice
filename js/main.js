@@ -1,9 +1,19 @@
 $(document).ready(function () {
+  // webevent scroll
+  $(document).scroll(function () {
+    if ($(this).scrollTop() < 10) {
+      $("#webevent-fixed-banner").css("visibility", "hidden");
+    } else {
+      $("#webevent-fixed-banner").css("visibility", "visible");
+    }
+  });
+  // carousel setup
   $(".carousel").slick({
-    autoplay: true,
+    autoplay: false,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
   });
+  // portrait carousel links
   $(".shenhe-portrait-click").click(function () {
     $(".carousel").slick("slickGoTo", 0);
   });
