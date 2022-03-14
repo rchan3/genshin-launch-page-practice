@@ -6,13 +6,25 @@
 body {
   margin: 0;
 }
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(199, 189, 158);
+}
 /* HEADER */
 header {
   margin: 0;
   min-height: 60vh;
   max-width: 100vw;
-  background-image: url(/src/41313058ced9cad7a1fc58843f17efac_705719549853980869.jpg);
-  background-size: contain;
+  background-image: url(../src/41313058ced9cad7a1fc58843f17efac_705719549853980869.jpg);
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: 50% -10vh;
 }
@@ -53,23 +65,36 @@ header {
 }
 
 #lantern-png {
-  background-image: url(/src/10d5912b1105a3ee66419311cf0d6ba2_2067232246792438049.png);
+  background-image: url(../src/10d5912b1105a3ee66419311cf0d6ba2_2067232246792438049.png);
 
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 90vh;
   position: relative;
-  top: -28vh;
+  top: -41vh;
   margin-bottom: -28vh;
 }
-/* CHAR INFORMATION */
+/* MAIN */
 main {
-  background-image: url(/src/cc67571746fdde1f3d5dd4498602f2ae_736159077554624526.jpg);
+  background-image: url(../src/cc67571746fdde1f3d5dd4498602f2ae_736159077554624526.jpg);
   background-size: cover;
+  margin-top: -50vh;
 }
 
+/* fixed position banner */
+#webevent-fixed-banner {
+  z-index: 4;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  visibility: hidden;
+}
+
+/* CHARACTER INFORMATION */
+
 #char-information {
-  min-height: 100vh;
+  max-height: 80vh;
 }
 
 #char-information-title {
@@ -83,4 +108,265 @@ main {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+#char-shenhe,
+#char-ganyu,
+#char-zhongli,
+#char-xiao,
+#char-yunjin {
+  position: relative;
+  display: flex;
+  width: 90%;
+}
+
+.char-image {
+  padding-left: 3vw;
+  padding-bottom: 5vh;
+  padding-top: 3vh;
+  width: 65%;
+  z-index: 2;
+}
+
+.char-image img {
+  width: 100%;
+  height: auto;
+}
+
+.char-image-video {
+  position: absolute;
+  bottom: 0;
+  right: 31vw;
+}
+
+.char-image-video img {
+  width: 90%;
+  height: auto;
+}
+
+.char-image-video img:hover {
+  cursor: pointer;
+}
+
+.char-desc {
+  padding-top: 20vh;
+  padding-right: 3vw;
+  width: 20%;
+  color: white;
+  line-height: 5vh;
+  font-size: 18px;
+  text-align: left;
+  margin-left: -4vw;
+  position: relative;
+  z-index: 3;
+}
+
+.char-info-circle {
+  z-index: -1;
+  position: absolute;
+  top: -20px;
+  left: -500px;
+  width: 980px;
+  height: 980px;
+  transform: rotate(45deg);
+}
+
+.char-desc img {
+  margin-left: -6.5vw;
+}
+
+/* active and inactive links in carousel selection */
+
+/* selected portraits */
+.shenhe-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  bottom: 79px;
+}
+
+.ganyu-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 180px;
+  bottom: 97px;
+}
+
+.zhongli-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 316px;
+  bottom: 167px;
+}
+
+.xiao-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 415px;
+  bottom: 280px;
+}
+
+.yunjin-quicklink-selected {
+  z-index: 2;
+  position: absolute;
+  left: 465px;
+  bottom: 430px;
+}
+/* shenhe portrait */
+
+.shenhe-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  bottom: 79px;
+}
+
+.shenhe-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 25px;
+  bottom: 79px;
+  visibility: hidden;
+}
+
+/* ganyu portrait */
+.ganyu-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 180px;
+  bottom: 97px;
+}
+
+.ganyu-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 180px;
+  bottom: 97px;
+  visibility: hidden;
+}
+
+/* zhongli portrait */
+
+.zhongli-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 316px;
+  bottom: 167px;
+}
+
+.zhongli-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 316px;
+  bottom: 167px;
+  visibility: hidden;
+}
+
+/* xiao portrait */
+.xiao-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 415px;
+  bottom: 280px;
+}
+
+.xiao-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 415px;
+  bottom: 280px;
+  visibility: hidden;
+}
+
+/* yunjun portrait */
+
+.yunjin-quicklink-inactive {
+  z-index: 2;
+  position: absolute;
+  left: 465px;
+  bottom: 430px;
+}
+
+.yunjin-quicklink-active {
+  z-index: 3;
+  position: absolute;
+  left: 465px;
+  bottom: 430px;
+  visibility: hidden;
+}
+
+/* portrait hovers */
+.yunjin-quicklink-inactive:hover ~ .yunjin-quicklink-active,
+.xiao-quicklink-inactive:hover ~ .xiao-quicklink-active,
+.zhongli-quicklink-inactive:hover ~ .zhongli-quicklink-active,
+.ganyu-quicklink-inactive:hover ~ .ganyu-quicklink-active,
+.shenhe-quicklink-inactive:hover ~ .shenhe-quicklink-active {
+  visibility: visible;
+}
+
+.yunjin-quicklink-active:hover,
+.xiao-quicklink-active:hover,
+.zhongli-quicklink-active:hover,
+.ganyu-quicklink-active:hover,
+.shenhe-quicklink-active:hover {
+  visibility: visible;
+}
+
+.carousel {
+  position: relative;
+  margin-top: -600px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.slick-slide:not(.slick-active) {
+  visibility: hidden;
+}
+/* carousel buttons */
+.prev {
+  position: absolute;
+  top: 150vh;
+  z-index: 2;
+}
+.next {
+  position: absolute;
+  right: 0px;
+  top: 150vh;
+  z-index: 2;
+}
+
+.right-arrow-active,
+.left-arrow-active {
+  z-index: 3;
+  visibility: hidden;
+}
+
+.right-arrow-inactive:hover ~ .right-arrow-active,
+.left-arrow-inactive:hover ~ .left-arrow-active {
+  visibility: visible;
+}
+.right-arrow-active:hover,
+.left-arrow-active:hover {
+  visibility: visible;
+}
+
+/* AREA INFORMATION */
+#area-information {
+  max-width: 100vw;
+}
+#area-info-title,
+#area-info-enkanomiya {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+#enkanomiya-container {
+  position: relative;
+}
+#enkanomiya-title {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
